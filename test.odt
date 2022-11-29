@@ -41,3 +41,21 @@ PORT    STATE SERVICE  VERSION
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
 Nmap done: 1 IP address (1 host up) scanned in 26.36 seconds
+Trying "mail.ru"
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 6230
+;; flags: qr rd ra; QUERY: 1, ANSWER: 8, AUTHORITY: 0, ADDITIONAL: 0
+
+;; QUESTION SECTION:
+;mail.ru.			IN	ANY
+
+;; ANSWER SECTION:
+mail.ru.		42	IN	A	94.100.180.200
+mail.ru.		42	IN	A	217.69.139.202
+mail.ru.		42	IN	A	217.69.139.200
+mail.ru.		42	IN	A	94.100.180.201
+mail.ru.		28	IN	AAAA	2a00:1148:db00:0:b0b0::1
+mail.ru.		169	IN	NS	ns3.mail.ru.
+mail.ru.		169	IN	NS	ns1.mail.ru.
+mail.ru.		169	IN	NS	ns2.mail.ru.
+
+Received 171 bytes from 192.168.42.129#53 in 188 ms

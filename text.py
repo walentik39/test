@@ -3,9 +3,11 @@
 import os
 class My:
     def fun():
-        os.system('nmap -A mail.ru >> test.odt')
+        os.system('host -A mail.ru >> test.odt')
         f = open('test.odt','r+')
         os.system('cat test.odt')
         print(f)
         f.close()
-fun=My.fun()
+
+if __name__=='__main__':
+    fun=My.fun()
