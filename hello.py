@@ -14,7 +14,7 @@ class A:
             d[i] = s
             time.sleep(0.2)
             i += 1
-            print(d)
+            print(str(d))
     f()
 
 if __name__=='__main__':
