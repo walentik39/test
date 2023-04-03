@@ -7,11 +7,13 @@ class A:
         a = []
         def inner_func():
             d = {}
-            for i in range(1,5):
+            i = 1
+            while i < 7:
                 a.append(random.randint(12,454))
-                x = fsum(sorted(a, key=None, reverse=False))
+                x = fsum(sorted(a, key=None, reverse=True))
                 d[i] = x
-                print(d ,end='\n')
+                print(str(d) ,end='\n')
+                i += 1
         return inner_func()
     main_func()
 if __name__=='__main__':
