@@ -1,0 +1,33 @@
+1.enp2s0 [Up, Running, Connected]
+2.any (Pseudo-device that captures on all interfaces) [Up, Running]
+3.lo [Up, Running, Loopback]
+4.bluetooth-monitor (Bluetooth Linux Monitor) [Wireless]
+5.nflog (Linux netfilter log (NFLOG) interface) [none]
+6.nfqueue (Linux netfilter queue (NFQUEUE) interface) [none]
+7.dbus-system (D-Bus system bus) [none]
+8.dbus-session (D-Bus session bus) [none]
+21:39:34.864841 IP (tos 0x0, ttl 64, id 13999, offset 0, flags [DF], proto UDP (17), length 64)
+    192.168.100.4.35570 > 192.168.100.1.53: [bad udp cksum 0x4994 -> 0x3b68!] 11157+ A? ping.archlinux.org. (36)
+21:39:34.864849 IP (tos 0x0, ttl 64, id 14000, offset 0, flags [DF], proto UDP (17), length 64)
+    192.168.100.4.35570 > 192.168.100.1.53: [bad udp cksum 0x4994 -> 0xd64e!] 37011+ AAAA? ping.archlinux.org. (36)
+21:39:34.866013 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto UDP (17), length 80)
+    192.168.100.1.53 > 192.168.100.4.35570: [udp sum ok] 11157 q: A? ping.archlinux.org. 1/0/0 ping.archlinux.org. A 95.216.195.133 (52)
+21:39:34.866448 IP (tos 0x0, ttl 64, id 0, offset 0, flags [DF], proto UDP (17), length 92)
+    192.168.100.1.53 > 192.168.100.4.35570: [udp sum ok] 37011 q: AAAA? ping.archlinux.org. 1/0/0 ping.archlinux.org. AAAA 2a01:4f9:c010:2636::1 (64)
+21:39:34.866753 IP6 (flowlabel 0x7fa3f, hlim 64, next-header TCP (6) payload length: 40) fe80::3153:1dc9:ece8:a6bc.42666 > 2a01:4f9:c010:2636::1.80: Flags [S], cksum 0xf6b2 (incorrect -> 0xe94a), seq 2320571099, win 64800, options [mss 1440,sackOK,TS val 577567881 ecr 0,nop,wscale 14], length 0
+21:39:34.867478 IP6 (hlim 255, next-header ICMPv6 (58) payload length: 32) fe80::1 > ff02::1:ffe8:a6bc: [icmp6 sum ok] ICMP6, neighbor solicitation, length 32, who has fe80::3153:1dc9:ece8:a6bc
+	  source link-address option (1), length 8 (1): 88:d2:74:e9:7e:d6
+	    0x0000:  88d2 74e9 7ed6
+21:39:34.867512 IP6 (hlim 255, next-header ICMPv6 (58) payload length: 32) fe80::3153:1dc9:ece8:a6bc > fe80::1: [icmp6 sum ok] ICMP6, neighbor advertisement, length 32, tgt is fe80::3153:1dc9:ece8:a6bc, Flags [solicited, override]
+	  destination link-address option (2), length 8 (1): d0:50:99:81:d1:df
+	    0x0000:  d050 9981 d1df
+21:39:34.868051 IP6 (hlim 255, next-header ICMPv6 (58) payload length: 88) fe80::1 > fe80::3153:1dc9:ece8:a6bc: [icmp6 sum ok] ICMP6, destination unreachable, unreachable route 2a01:4f9:c010:2636::1
+21:39:39.875887 ARP, Ethernet (len 6), IPv4 (len 4), Request who-has 192.168.100.4 tell 192.168.100.1, length 46
+21:39:39.875906 ARP, Ethernet (len 6), IPv4 (len 4), Reply 192.168.100.4 is-at d0:50:99:81:d1:df, length 28
+21:39:39.992365 ARP, Ethernet (len 6), IPv4 (len 4), Request who-has 192.168.100.1 tell 192.168.100.4, length 28
+21:39:39.992387 IP6 (hlim 255, next-header ICMPv6 (58) payload length: 32) fe80::3153:1dc9:ece8:a6bc > fe80::1: [icmp6 sum ok] ICMP6, neighbor solicitation, length 32, who has fe80::1
+	  source link-address option (1), length 8 (1): d0:50:99:81:d1:df
+	    0x0000:  d050 9981 d1df
+21:39:39.992695 ARP, Ethernet (len 6), IPv4 (len 4), Reply 192.168.100.1 is-at 88:d2:74:e9:7e:d6, length 46
+21:39:39.993161 IP6 (hlim 255, next-header ICMPv6 (58) payload length: 24) fe80::1 > fe80::3153:1dc9:ece8:a6bc: [icmp6 sum ok] ICMP6, neighbor advertisement, length 24, tgt is fe80::1, Flags [router, solicited]
+

@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 
-f1 = open('test.odt','r')
-for i in f1:
-    print(i)
-f2 = open('test2.odt','w')
-for line in f1:
-    f2.write(line.upper())
-f1.close()
-f2.close()
+import sys
+try:
+    with open('test2.odt') as f:
+        x = f.readline()
+        for i in x:
+            print(i, end='')
+except IOError as e:
+    print("{}\nОшибка при открытии {}. Завершение программы.". format(e, file), file=sys.stderr)
+    sys.exit(1)
