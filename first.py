@@ -1,5 +1,5 @@
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
+#!/usr/bin/env python3
+
 import math as m
 import os
 import subprocess
@@ -27,4 +27,3 @@ w1.mainloop()
 w2.mainloop()
 
 
-input()
