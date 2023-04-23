@@ -2,20 +2,19 @@
 
 import time
 import random
+import os
 
 class A:
-    def f():
-        d = {}
-        s = []
-        i = 1
-        while i < 6:
-            s.append(random.randint(1,99))
-            s = sorted(s, key=None, reverse=True)
-            d[i] = s
-            time.sleep(0.2)
-            i += 1
-            print(str(d))
-    f()
+    def main():
+        os.system('./rand > test.odt')
+        def two_main():
+            with open('test.odt','r+') as myfile:
+                s = myfile.read()
+                for i in s:
+                    print(i, end=' ')
+        return two_main()
+    main()
 
 if __name__=='__main__':
     A
+
