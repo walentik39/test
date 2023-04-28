@@ -9,8 +9,9 @@ class A:
             i = 0
             while i < 7:
                 x.append(random.randint(1,20))
-                print(sorted(x, key=None, reverse=True),sorted(y, key=None, reverse=False))
+                print(sorted(x, key=None, reverse=False),sorted(y, key=None, reverse=False))
                 y.append(random.randint(1,20))
+                print(sorted(x, key=None, reverse=True),sorted(y, key=None, reverse=True))
                 i += 1
         return two_main()
     main()
