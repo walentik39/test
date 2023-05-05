@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
 import os
 import sys
 import math as m
@@ -17,7 +16,6 @@ else:
     while a<1000:
         print(a)
         a,b=b, a-b
-input()
 
 
 
