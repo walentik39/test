@@ -9,7 +9,7 @@ from tkinter import *
 from tkinter import colorchooser
 import turtle
 w1=turtle.Turtle()
-for c in ['green','red','blue','black']:
+for c in ['green','red','yellow','blue','black']:
     w1.color(c)
     w1.forward(75)
     w1.left(90)
