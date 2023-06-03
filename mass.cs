@@ -8,12 +8,15 @@ namespace Lessons
   {
     static void Main(string[] args)
     {
-      int[] myArray = new int[10];
+      int[,] myArray = new int[6,7];
       Random random = new Random();
-      for(int i = 0;i<myArray.Length;i++)
+      for(int i = 0;i<myArray.GetLength(0);i++)
       {
-        myArray[i] = random.Next(100,999);
-        Console.Write($"{myArray[i]}"+"\t");
+      	for(int j = 0; j < myArray.GetLength(1); j++)
+	{
+        	myArray[i,j] = random.Next(10,999);
+        	Console.Write($"{myArray[i,j]}"+"\t");
+	}
       }
       Console.WriteLine();
     }
