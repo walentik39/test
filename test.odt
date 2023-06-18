@@ -1,4 +1,6 @@
-16 21 18 2 11 5 14 15 29 19 28 9 14 4 27 24 17 29 10 23 24 6 24 5 11 15 11 5 9 15 9 17 6 19 19 10 16 3 17 16 15 15 17 21 20 15 15 29 6 18 14 22 
-Trying "mail.ru"
-Host mail.ru not found: 5(REFUSED)
-Received 25 bytes from 192.168.100.1#53 in 486 ms
+ 17:30:29 up 43 min,  3 users,  load average: 0,09, 0,05, 0,20
+USER     TTY        LOGIN@   IDLE   JCPU   PCPU WHAT
+awp      tty1      16:47   42:57  40.01s  0.14s /usr/bin/startplasma-x11
+awp      pts/0     16:47   42:50   0.00s  0.89s /usr/bin/kded5
+awp      pts/2     17:11    4.00s  0.07s  0.00s w
+['']

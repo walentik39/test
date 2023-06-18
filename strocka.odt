@@ -1,0 +1,3 @@
+lib.ru has address 81.176.66.163
+lib.ru mail is handled by 10 lib.ru.
+CompletedProcess(args=['ping', '-c', '1', 'lib.ru'], returncode=0, stdout='PING LIB.ru (81.176.66.163) 56(84) bytes of data.\n64 bytes from lib.ru (81.176.66.163): icmp_seq=1 ttl=54 time=31.3 ms\n\n--- LIB.ru ping statistics ---\n1 packets transmitted, 1 received, 0% packet loss, time 0ms\nrtt min/avg/max/mdev = 31.289/31.289/31.289/0.000 ms\n', stderr='')
