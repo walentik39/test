@@ -1,0 +1,39 @@
+#!/usr/bin/env python3
+
+import math as m
+import os
+import subprocess
+import sys
+import random
+from tkinter import *
+from tkinter import colorchooser
+import turtle
+w1=turtle.Turtle()
+for c in ['green','red','yellow','blue','black']:
+    w1.circle(12)
+    w1.color(c)
+    w1.forward(75)
+    w1.left(90)
+    w1.circle(12)
+    w1.color(c)
+    w1.forward(65)
+    w1.left(80)
+    w1.color(c)
+    w1.forward(65)
+    w1.circle(12)
+    w1.color(c)
+    w1.left(90)
+    
+w1 = Tk()
+w1.title("Надо попробовать!")
+w1.geometry("450x450")
+w1.config(bg='#725279')
+
+w2 =Tk()
+w2.title('Привет')
+w2.geometry('220x220')
+w2.config(bg='#269928')
+w1.mainloop()
+w2.mainloop()
+
+
