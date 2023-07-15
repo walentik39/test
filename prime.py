@@ -1,10 +1,6 @@
 #!/usr/bin/env python
 import os
 import sys
-import math as m
-from tkinter import *
-from tkinter import colorchooser
-import random
 import subprocess
 a=float(input('Введите число:\n'))
 b=float(input('Введите второе:\n'))
