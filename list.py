@@ -22,5 +22,4 @@ def read_file():
 
 
 if __name__=='__main__':
-    read_list('Вася')
-    read_file()
+    read_list(read_file())
