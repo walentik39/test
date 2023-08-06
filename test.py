@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 from math import *
 import sys
@@ -14,8 +14,8 @@ def foo():
     b=float(input("Введите второе число:"))
     print("Вычисление среднего значения чисел:",(a + b) /2,'\n' "И корня",sqrt(a+b))
 foo()
-def quit():
-    sys.exit()
+#def quit():
+#    sys.exit()
 widget = Button(None, text='Всё готово!' , command=quit)
 widget.pack()
 widget.mainloop()

@@ -24,16 +24,16 @@ for c in ['green','red','yellow','blue','black']:
     w1.color(c)
     w1.left(90)
     
-w1 = Tk()
-w1.title("Надо попробовать!")
-w1.geometry("450x450")
-w1.config(bg='#725279')
+w = Tk()
+w.title("Надо попробовать!")
+w.geometry("450x450")
+w.config(bg='#725279')
 
 w2 =Tk()
 w2.title('Привет')
 w2.geometry('220x220')
 w2.config(bg='#269928')
-w1.mainloop()
+w.mainloop()
 w2.mainloop()
 
 
