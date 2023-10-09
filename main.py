@@ -22,7 +22,7 @@ for x in range(23):
 canvas.create_line(10, 10, 10, 610, width=1, arrow=FIRST, fill='white')
 canvas.create_line(0, 310, 1010, 310, width=1, arrow=LAST, fill='white')
 
-w = 0.0209    # циклическая частота
+w = 0.0239    # циклическая частота
 phi = 20      # смещение графика по X
 A = 100       # амплитуда
 dy = 210      # смещение графика по y
