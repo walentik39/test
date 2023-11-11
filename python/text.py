@@ -2,20 +2,27 @@
 
 import os
 import subprocess
-class My:
+class My(object):
 
-    def fun():
+    def __init__(self, file):
+        self.file = file
+
+    def set_fun(self, file):
         result = subprocess.run(['host','mail.ru'],stderr=subprocess.PIPE,
                                 stdout=subprocess.PIPE)
+        self.file = file
         with open('test.odt','w') as file:
             file.write(str(result))
 
-    def read_file():
+    def read_file(self, file):
+        self.file = file
         with open('test.odt','r') as file:
             for i in file:
                 print(''.join(i))
 
 
 if __name__=='__main__':
-    My.fun()
-    My.read_file()
+    my = My('test.odt')
+    my.set_fun('test.odt')
+    my.read_file('test.odt')
+    
