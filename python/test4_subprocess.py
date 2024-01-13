@@ -31,6 +31,6 @@ def ping_ip_list(ip_list):
 
 
 if __name__=='__main__':
-    ip_list = ["8.8.4.4","test.me","127.0.1.1","8.8.8.8","12.124.12.22"]
+    ip_list = ["8.8.4.4","9.9.9.9","127.0.0.1","8.8.8.8","172.124.12.22"]
     result = ping_ip_list(ip_list)
     pprint(result)
