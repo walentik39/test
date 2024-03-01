@@ -5,14 +5,12 @@ import subprocess
 import random
 
 def fun():
-    a,b = 0,1
-    n = random.randint(1,200)
-    while a < n:
-        print(a, end=' ')
-        a,b = b, a+b
-    print()
+    output = subprocess.run(['ping','-c 2','127.0.0.1'],stderr=subprocess.DEVNULL,
+                            stdout=subprocess.PIPE,encoding='utf-8')
+    res = output.stdout.strip()
+    return res
 
-def main(n):
+def main():
     x = []
     for i in range(random.randint(1,12)):
         x +=[i]
@@ -26,5 +24,7 @@ def read_file():
 
 if __name__=='__main__':
     result = fun()
-    result1 = main(result)
+    result1 = main()
+    with open('test.odt','a') as file:
+        file.write(str(result))
     result2 = read_file()
