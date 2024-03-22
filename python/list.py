@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
 
 import random
-import subprocess
 
 def read_list(name:str) -> list:
     empty_list = []
@@ -10,12 +9,12 @@ def read_list(name:str) -> list:
         freands = ['Макс','Петро','Leo','John','Вера','Иван','Json']
         for i in range(len(freands)):
             empty_list.append(random.choice(freands))
-            with open('list.odt','w') as file:
-                file.write(str(empty_list))
+            with open('list.odt','w') as f:
+                f.write(str(empty_list))
     return names()
 
 def read_file():
-    with open('list.odt') as file:
+    with open('list.odt','r') as file:
         result = file.read()
         for i in result:
             print(i.rstrip(),end=' ')
