@@ -1,30 +1,23 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//фибоначи
+int global = 100;
 
-void swap_2(int* a, int* b)
+int function(void)
 {
-	int t = *a;
-	*a = *b;
-	*b = t;
+	puts("function: function");
+	int global = 200;
+	printf("global: %i\n", global);
+	printf("local: %i\n", global);
+	return 0;
 }
 
-int main(int argc, char* argv[])
+int main(void)
 {
-	int x = 0;
-	int y = 1;
-	int n;
-	scanf("%d", &n);
-	while (x < n)
-	{
-		printf("%d\n", x);
-		swap_2(&x, &y);
-		x += y;
-		x++;
-	}
-
-
-	EXIT_SUCCESS;
+	puts("function: main");
+	int global = 150;
+	fprintf(stdout, "global: %i\n", global);
+	fprintf(stdout, "local: %i\n", global);
+	function();
+	return 0;
 }
-
