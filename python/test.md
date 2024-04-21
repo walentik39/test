@@ -1,8 +1,5 @@
-traceroute to 127.0.0.1 (127.0.0.1), 30 hops max, 60 byte packets
- 1  localhost (127.0.0.1)  0.044 ms  0.010 ms  0.008 ms
-Kernel IP routing table
-Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
-default         _gateway        0.0.0.0         UG    100    0        0 enp2s0
-192.168.100.0   0.0.0.0         255.255.255.0   U     100    0        0 enp2s0
-Kernel IP routing cache
-Source          Destination     Gateway         Flags Metric Ref    Use Iface
+COMMAND  PID USER  FD   TYPE DEVICE SIZE/OFF NODE NAME
+firefox 1348  awp  35u  IPv4  38816      0t0  UDP *:32682 
+firefox 1348  awp  56u  IPv4  38843      0t0  UDP *:16281 
+firefox 1348  awp  70u  IPv4  37602      0t0  TCP awp-tobefilledbyoem:38676->239.237.117.34.bc.googleusercontent.com:https (ESTABLISHED)
+firefox 1348  awp 133u  IPv4  12044      0t0  TCP awp-tobefilledbyoem:47974->93.243.107.34.bc.googleusercontent.com:https (ESTABLISHED)

@@ -1,20 +1,14 @@
 #!/usr/bin/env python3
-from math import *
-import sys
+
 import subprocess
-import random
-import os
-from fractions import Fraction
-import functools
-from tkinter import *
-from tkinter.messagebox import showinfo
-def foo():
-    a=float(input("Введите первое число:"))
-    b=float(input("Введите второе число:"))
-    print("Вычисление среднего значения чисел:",(a + b) /2,'\n' "И корня",sqrt(a+b))
-foo()
-#def quit():
-#    sys.exit()
-widget = Button(None, text='Всё готово!' , command=quit)
-widget.pack()
-widget.mainloop()
+def func():
+    result = subprocess.run(['lsof','-i'],stdout=subprocess.PIPE,
+                            stderr=subprocess.DEVNULL,encoding='utf-8')
+    return result.stdout
+
+if __name__=='__main__':
+    with open('test.md','w') as f:
+        f.write(str(func()))
+    with open('test.md','r') as file:
+        res = file.read()
+        print(res)
