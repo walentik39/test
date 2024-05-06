@@ -1,13 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <unistd.h>
+#include <math.h>
 
-int main(int argc, char* argv[])
+int main(void)
 {
-	float a, b;
-	printf("Введите первое число:");
-	scanf("%f", &a);
-	printf("введите второе число:");
-	scanf("%f", &b);
-	printf("%f\n", (a - b)/b);
+	double a, b;
+	printf("Введите первое число: ");
+	scanf("%lf", &a);
+	printf("введите второе число: ");
+	scanf("%lf", &b);
+	if (a > b)
+	{
+		printf("%lf\n",(b/(a/100)));
+	}
+	else
+		printf("%lf\n", (a/(b/100)));
 	return 0;
 }
