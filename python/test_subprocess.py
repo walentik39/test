@@ -2,7 +2,7 @@
 
 import subprocess
 
-ip_list = ['8.8.4.4','127.0.1.1','test.me','37.214.18.10','8.8.8.8']
+ip_list = ['8.8.4.4','freebsd.org','test.me','0.0.0.1']
 for ip in ip_list:
     result = subprocess.run(
             ['ping','-c','1','-n', ip],
