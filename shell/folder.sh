@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+touch log.odt
 IFS=:
 for FOLDER in $PATH
 do
