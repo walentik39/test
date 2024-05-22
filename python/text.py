@@ -8,8 +8,8 @@ class My(object):
         self.file = file
 
     def set_fun(self, file):
-        result = subprocess.run(['host','mail.ru'],stderr=subprocess.PIPE,
-                                stdout=subprocess.PIPE)
+        result = subprocess.run(['host','mail.ru'],stderr=subprocess.DEVNULL,
+                                stdout=subprocess.PIPE,encoding='utf-8')
         self.file = file
         with open('test.odt','w') as file:
             file.write(str(result))

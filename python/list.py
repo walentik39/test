@@ -4,12 +4,13 @@ import random
 
 def read_list(name:str) -> list:
     empty_list = []
-
     def names():
-        freands = ['Макс','Петро','Leo','John','Вера','Иван','Json']
+        freands = ['Злата','Макс','Пятро','Leo','John','Вера','Иван','Json']
         for i in range(len(freands)):
             empty_list.append(random.choice(freands))
             with open('list.odt','w') as f:
+                f.write(str(empty_list))
+                random.shuffle(empty_list)
                 f.write(str(empty_list))
     return names()
 
