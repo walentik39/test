@@ -1,9 +1,11 @@
 #!/usr/bin/env python3
 
 import subprocess
+import random
 
 def fun_ip():
     ip_list = ['8.8.4.4','127.0.1.1','test.me','ipconfig.me','8.8.8.8']
+    random.shuffle(ip_list)
     for ip in ip_list:
         result = subprocess.run(
                 ['ping','-c','1','-n', ip],
@@ -17,6 +19,7 @@ def fun_ip():
             print(f"Адрес {ip} пингуется")
         else:
             print(f"адрес {ip} не пингуется")
+        return output    
 
 def write_file(name):
     with open('pings.md','w') as file:
