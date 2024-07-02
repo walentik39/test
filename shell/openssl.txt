@@ -1,0 +1,13 @@
+Как зашифровать и расшифровать файл,
+с помощью openssl
+openssl aes-256-cbc -pbkdf2 -in test.odt -out test-enc.odt
+зашифровка происходить в бинарном виде.
+
+openssl aes-256-cbc -pbkdf2 -a -in test.odt -out test-enc.odt
+зашифровка производится в текстовом виде.
+
+openssl aes-256-cbc -pbkdf2 -a -d -in test-enc.odt -out test.odt
+расшифровка .
+
+openssl aes-256-cbc -pbkdf2 -a -in /bin/bash -out bash.txt
+можно зашифровать и бинарный файл.

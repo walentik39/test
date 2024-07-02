@@ -7,8 +7,8 @@ def func():
     return result.stdout
 
 if __name__=='__main__':
-    with open('test.md','w') as f:
+    with open('test.odt','w') as f:
         f.write(str(func()))
-    with open('test.md','r') as file:
+    with open('test.odt','r') as file:
         res = file.read()
         print(res)
