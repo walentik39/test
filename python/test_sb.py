@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 
+import dis
 import subprocess
 import random
 
@@ -24,6 +25,7 @@ def fun_ip():
 def write_file(name):
     with open('pings.md','w') as file:
         file.write(str(name))
+        file.write(str(dis.dis(fun_ip)))
 
 if __name__=='__main__':
     result = write_file(fun_ip())
