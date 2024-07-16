@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-int main(int aprc, char* argv[])
+int main(void)
 {
 	unsigned char src[15] ="1234567890";
 
