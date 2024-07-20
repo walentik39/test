@@ -5,6 +5,7 @@ int main(void)
 {
 	int a;
 	int b;
+	printf("Введите первое число ");
 	scanf("%d",&a);
 	scanf("%d",&b);
 	int event = 0;
