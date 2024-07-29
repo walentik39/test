@@ -24,3 +24,8 @@ def fun1():
 if __name__=='__main__':
     result = daily_sales_total(fun(),fun1())
     print(result)
+    with open("test.odt","a") as f:
+        f.write(str(result))
+    with open("test.odt","r") as file:
+        res = file.read()
+        print(res)
