@@ -1,7 +1,5 @@
-#!/usr/bin/env python
-import os
-import sys
-import subprocess
+#!/usr/bin/env python3
+
 a=float(input('Введите число:\n'))
 b=float(input('Введите второе:\n'))
 if a<b:

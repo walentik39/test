@@ -11,11 +11,11 @@ button = Button(None, text='Выход!', bg='#711337', command=quit)
 button.pack()
 for y in range(21):
     k = 50 * y
-    canvas.create_line(10+k, 610, 10+k, 10, width=1, fill='#191938')
+    canvas.create_line(10+k, 610, 10+k, 10, width=1, fill='#191935')
 
 for x in range(23):
     k = 50 * x
-    canvas.create_line(10, 10+k, 1010, 10 +k, width=1, fill='#191938')
+    canvas.create_line(10, 10+k, 1010, 10 +k, width=1, fill='#191538')
 
 # линии координат x и y
 
