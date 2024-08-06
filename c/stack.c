@@ -5,7 +5,7 @@ void A();
 void B();
 void C();
 
-int main(int argc , char* argv[])
+int main(void)
 {
 	printf("main() called.\n");
 	A();
