@@ -12,7 +12,7 @@ class My(object):
                                 stdout=subprocess.PIPE,encoding='utf-8')
         self.file = file
         with open('test.odt','w') as file:
-            file.write(str(result))
+            file.write(str(result.stdout))
 
     def read_file(self, file):
         self.file = file
