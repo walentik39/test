@@ -6,12 +6,12 @@ import os
 
 class A:
     def main():
-        os.system('./rand > test.odt')
+        os.system('lsof -i > test.odt')
         def two_main():
             with open('test.odt','r+') as myfile:
                 s = myfile.read()
-                for i in s:
-                    print(i, end=' ')
+                print(s)
+            os.system('> test.odt')    
         return two_main()
     main()
 
