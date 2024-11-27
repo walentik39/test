@@ -1,12 +1,12 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
 #creates dirs from N to N+10
-
-echo "Hello World"
-cur=1
+echo $#
+exit 1
+cur=$1
 while [[ "$cur" -le 10 ]];
 do
-	if [[ -e $cur ]]
+	if [[ -e "$cur" ]]
 	then
 		echo File $cur already exists
 		cur=$(( cur + 1 ))
