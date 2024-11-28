@@ -9,7 +9,7 @@ def fun_ip():
     random.shuffle(ip_list)
     for ip in ip_list:
         result = subprocess.run(
-                ['ping','-c','1','-n', ip],
+                ['ping','-c','1', ip],
                 stdout=subprocess.PIPE,
                 stderr=subprocess.PIPE,
                 encoding="utf-8"
@@ -25,7 +25,7 @@ def fun_ip():
 def write_file(name):
     with open('pings.md','w') as file:
         file.write(str(name))
-        file.write(str(dis.dis(fun_ip)))
+        dis.dis(fun_ip)
 
 if __name__=='__main__':
     result = write_file(fun_ip())
