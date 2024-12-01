@@ -4,19 +4,24 @@ import os
 import subprocess
 import sys
 import random
+import dis
 
-def one():
-    result = subprocess.run(['ip','a'],stdout=subprocess.PIPE,
+class Sub:
+    def one(self):
+        self.com = input("Введите команду: ")
+        self.opt = input("введите опцию : ")
+        result = subprocess.run([self.com,self.opt],stdout=subprocess.PIPE,
                             stderr=subprocess.DEVNULL,encoding='utf-8')
-    return result.stdout
+        return result
 
-def rand_fun():
-    return random.randint(0,9)
+    def two(self):
+        return dis.dis(self.one)
 
 if __name__=='__main__':
-    with open('prim.md','w') as file:
-        file.write(str(one()))
-        file.write(str(rand_fun()))
-    with open('prim.md','r') as f:
+    s = Sub()
+    with open('prim.odt','w') as file:
+        file.write(str(s.one()))
+        file.write(str(s.two()))
+    with open('prim.odt','r') as f:
         res = f.read()
         print(res)
