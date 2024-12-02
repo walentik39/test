@@ -1,6 +1,13 @@
 #!/usr/bin/env python3
 
 import subprocess
+import random
+class Rand:
+    def print_rand(self):
+        key = random.randint(0,256)
+        a = [key]
+        print(a)
+
 class My:
     def fun(self):
         ip_list = ['8.8.4.4','127.0.1.1','test.me','0.0.0.0','8.8.8.8']
@@ -19,5 +26,7 @@ class My:
                 print(f"адрес {ip} не пингуется")
 
 if __name__=='__main__':
-    m = My()
-    m.fun()
+    #m = My()
+    #m.fun()
+    r = Rand()
+    r.print_rand()
