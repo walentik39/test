@@ -6,11 +6,11 @@ import random
 
 class Sub:
     def ping(self):
-        ip_list = ['8.8.4.4','https://www.freebsd.org','test.me','0.0.0.0']
+        ip_list = ['8.8.4.4','https://www.freebsd.org','linux.org','0.0.0.0','192.168.100.2']
         random.shuffle(ip_list)
         for ip in ip_list:
             result = subprocess.run(
-                    ['ping','-c','1','-n', ip],
+                    ['ping','-c','2', ip],
                     stdout=subprocess.PIPE,
                     stderr=subprocess.PIPE,
                     encoding="utf-8"
