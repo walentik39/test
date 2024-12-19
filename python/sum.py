@@ -3,9 +3,9 @@ import random
 from math import *
 
 class A:
-    def main_func():
+    def main_func(self):
         a = []
-        def inner_func():
+        def inner_func(self):
             d = {}
             i = 1
             while i < 7:
@@ -14,7 +14,8 @@ class A:
                 d[i] = x
                 print(str(d) ,end='\n')
                 i += 1
-        return inner_func()
-    main_func()
+        return inner_func(self)
+
 if __name__=='__main__':
-    A
+    my = A()
+    my.main_func()
