@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import random
 from math import *
+import os
 
 class A:
     def main_func(self):
@@ -8,7 +9,7 @@ class A:
         def inner_func(self):
             d = {}
             i = 1
-            while i < 7:
+            while i < random.randint(1,12):
                 a.append(random.randint(12,454))
                 x = fsum(sorted(a, key=None, reverse=True))
                 d[i] = x
@@ -19,3 +20,4 @@ class A:
 if __name__=='__main__':
     my = A()
     my.main_func()
+        
