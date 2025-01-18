@@ -6,7 +6,7 @@ import random
 
 class Sub:
     def ping(self):
-        ip_list = ['8.8.4.4','https://www.freebsd.org','linux.org','0.0.0.0','192.168.100.2']
+        ip_list = ['8.8.4.4','freebsd.org','linux.org.ru','0.0.0.0','127.1.0.1']
         random.shuffle(ip_list)
         for ip in ip_list:
             result = subprocess.run(
